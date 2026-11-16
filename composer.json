@@ -1,0 +1,32 @@
+{
+  "name": "nosun/exception-center",
+  "description": "Laravel exception center application and reusable client",
+  "type": "project",
+  "require": {
+    "php": ">=8.4",
+    "laravel/framework": "^13.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nosun\\ExceptionCenter\\": "src/",
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nosun\\ExceptionCenter\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "php tests/run.php"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Nosun\\ExceptionCenter\\Support\\ExceptionCenterServiceProvider"
+      ]
+    }
+  }
+}
